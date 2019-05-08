@@ -55,21 +55,21 @@ const data = {
   ]
 }
 
-const fetchData = () => {
-  return Promise.resolve(data);
-}
-
 // const fetchData = () => {
-//   return fetch("http://prototype.carter-dev.net/fed-test/items.json").then(
-//     res => {
-//       if (res.ok) return res.json();
-//       return Promise.reject();
-//     },
-//     rej => {
-//       return Promise.reject();
-//     }
-//   )
+//   return Promise.resolve(data);
 // }
+
+const fetchData = () => {
+  return fetch("http://prototype.carter-dev.net/fed-test/items.json").then(
+    res => {
+      if (res.ok) return res.json();
+      return Promise.reject();
+    },
+    rej => {
+      return Promise.reject();
+    }
+  )
+}
 
 export const dataServices = {
   fetchData

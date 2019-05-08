@@ -1,13 +1,58 @@
 .card {
   height: 420px;
+  padding: 30px;
+  padding-top: 50px;
+  margin: 5px;
+
   &.featured {
-    background-color: green;
+    background-image: linear-gradient(to bottom right, rgb(40, 158, 198), rgb(0, 163, 127));
     color: white;
+    .title {
+      font-size: 30px;
+      line-height: 38px;
+    }
+    .footer .arrow {
+      background-color: rgba(0, 0, 0, .4);
+      svg {
+        fill: white;
+      }
+    }
   }
+
   .title {
-    font-size: 16px;
-    &.featured {
-      font-size: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 25px;
+  }
+  .description {
+    font-size: 15px;
+    line-height: 25px;
+  }
+  .footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    .arrow {
+      width: 60px;
+      height: 60px;
+      padding: 20px;
+      svg {
+        fill: rgb(0, 161, 151);
+      }
+    }
+    .document {
+      padding-left: 20px;
+      opacity: .5;
+      svg {
+        opacity: .4;
+      }
+      span {
+        margin-left: 10px;
+        font-size: 16px;
+      }
     }
   }
 }

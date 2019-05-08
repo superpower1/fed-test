@@ -3,12 +3,16 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.scss$/,
-        use: [{ loader: 'style-loader' }, { loader: 'css-loader' }, { loader: 'sass-loader' }],
+        test: /\.svg$/,
+        use: [{ loader: "babel-loader" }, { loader: 'react-svg-loader', options: { jxs: true } }]       
       },
       {
         test: /\.css$/,
         use: [{ loader: 'style-loader' }, { loader: 'css-loader' }],
+      },
+      {
+        test: /\.scss$/,
+        use: [{ loader: 'style-loader' }, { loader: 'css-loader' }, { loader: 'sass-loader' }],
       },
       {
         test: /\.(js|jsx)$/,
