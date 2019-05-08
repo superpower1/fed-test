@@ -1,0 +1,13 @@
+.card {
+  height: 420px;
+  &.featured {
+    background-color: green;
+    color: white;
+  }
+  .title {
+    font-size: 16px;
+    &.featured {
+      font-size: 20px;
+    }
+  }
+}
