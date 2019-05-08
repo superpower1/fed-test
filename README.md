@@ -1,24 +1,13 @@
 # Carter FED Test
 Code test for potential Carter front-end developers
 
-## The challenge:
-Use a heady combination of front-end technologies to produce the card grid layout in `/CardGrid.jpg` (don't forget to make it responsive). All the content for the cards is in a .json file - read from this to output your cards onto the page.
+## Install
 
-The JSON can be found here - http://prototype.carter-dev.net/fed-test/items.json
+In the project directory, run `npm install` to install dependencies.
 
-You can use a framework if you like but avoid plugins - no need to change your style, just code how you normally would.
+## Run the App
 
-If you have time, apply some nice hover style to the cards, whatever you like.
+In the project directory, use `npm start` to run the App.
 
-Comment where needed.
-
-Feel free to ask questions.
-
-## Notes
-
-### Fonts
-Open Sans - weights: 400, 600, 700
-Available on Google Fonts
-
-### Icons
-Arrow & document SVG files are provided in the `/svg` directory
+The App will run in the development mode.<br>
+Open [http://localhost:8080](http://localhost:8080) to view it in the browser.
